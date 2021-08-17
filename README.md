@@ -3,6 +3,7 @@
 
 # [Use docker](#docker)
 > docker build -t sb-rust . && docker run -v $PWD/code:/code -it --rm sb-rust
+
 PS: `cargo run` command is painfully slow when running docker with volumes on MacOS, it's taking > 20 seconds to build.
 
 # [OR Install Rust locally](#install-glorious-rust)
@@ -21,14 +22,14 @@ I put there two exercises that I totally didn't steal from [CodeWars](https://ww
  the [Advent of Code 2020](https://adventofcode.com/2020). Let's see if we are able to solve at least one of them. All of them have an explanation on top of the exercise
 
 # [Learning material](#learning)
-- Rust official documentation - [https://doc.rust-lang.org/std/index.html](https://doc.rust-lang.org/std/index.html), leading the list with our beloved [RTFM approach](https://en.wikipedia.org/wiki/RTFM)
-- A Gentle Introduction To Rust - [https://stevedonovan.github.io/rust-gentle-intro/readme.html](https://stevedonovan.github.io/rust-gentle-intro/readme.html)
-- Tour of Rust - [https://tourofrust.com](https://tourofrust.com), It has a nicer pacing compared with the official book and gives you a sandbox
-- Rust official book - [https://doc.rust-lang.org/book/title-page.html](https://doc.rust-lang.org/book/title-page.html), great but MASSIVE (and that's the reason why I didn't put at the top of the list)
-- Rust Cheat sheet - [https://cheats.rs](https://cheats.rs/), what a WONDERFUL website
-- Rust cookbook - [https://rust-lang-nursery.github.io/rust-cookbook](https://rust-lang-nursery.github.io/rust-cookbook/), a collection of simple examples of common programming tasks
-- Rust by example - [https://doc.rust-lang.org/rust-by-example](https://doc.rust-lang.org/rust-by-example/), One of the official books
-- ctjhoa/rust-learning - [https://github.com/ctjhoa/rust-learning](https://github.com/ctjhoa/rust-learning), A bunch of links to blog posts, articles, videos, etc for learning Rust. Including the above
+- [Rust official documentation - https://doc.rust-lang.org/std/index.html](https://doc.rust-lang.org/std/index.html), leading the list with our beloved [RTFM approach](https://en.wikipedia.org/wiki/RTFM)
+- [A Gentle Introduction To Rust - https://stevedonovan.github.io/rust-gentle-intro/readme.html](https://stevedonovan.github.io/rust-gentle-intro/readme.html)
+- [Tour of Rust - https://tourofrust.com](https://tourofrust.com), It has a nicer pacing compared with the official book and gives you a sandbox
+- [Rust official book - https://doc.rust-lang.org/book/title-page.html](https://doc.rust-lang.org/book/title-page.html), great but MASSIVE (and that's the reason why I didn't put at the top of the list)
+- [Rust Cheat sheet - https://cheats.rs](https://cheats.rs/), what a WONDERFUL website
+- [Rust cookbook - https://rust-lang-nursery.github.io/rust-cookbook](https://rust-lang-nursery.github.io/rust-cookbook/), a collection of simple examples of common programming tasks
+- [Rust by example - https://doc.rust-lang.org/rust-by-example](https://doc.rust-lang.org/rust-by-example/), One of the official books
+- [ctjhoa/rust-learning - https://github.com/ctjhoa/rust-learning](https://github.com/ctjhoa/rust-learning), A bunch of links to blog posts, articles, videos, etc for learning Rust. Including the above
 
 # [Some better "let's code" sources](#better-lets-code)
 - https://github.com/rust-lang/rustlings
