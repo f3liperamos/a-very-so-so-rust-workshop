@@ -46,6 +46,11 @@ println!("Hello, I'm Rust's \"console.log\"");
 // printing variables
 let variable = "handsome";
 println!("Hello, {}", variable); // ‣Hello handsome
+
+// you can also use named arguments
+let bob = "Bob";
+let greet = "how are you?";
+println!("Hello {y}, {x}", x = greet, y = bob); // ‣ Hello Bob, how are you?
 ```
 
 ### Variables
@@ -62,6 +67,15 @@ my_mut_variable = String::from("Hell yeah!");
 let array_1: [i32; 2] = [10, 20];
 let array_2 = [1.1, 1.2, 1.3]; // ‣array_2: [f64; 3] inferred
 let array_3 = ["A", "B", "C"]; // ‣array_3: [&str; 3] inferred
+
+// To print arrays you need to use {:?}
+println!("{:?}", array_1)
+
+// not needed when accessing a specific index
+println!("array_1[{}], array_2[{}]", array_1[0], array_2[1]) // ‣array_1[2], array_2[1.2]
+
+// if you TRY to access a undefined index the code will not compile
+println!("undefined index {}", array_1[2]) // compilation error index out of bounds
 ```
 
 ### Tuples
@@ -70,7 +84,7 @@ let my_tupple = (10, "string");
 println!("{}, {}", my_tupple.0, my_tupple.1);
 ```
 
-### Loops 
+### Loops
 while
 ```rust
 let mut i = 0;
