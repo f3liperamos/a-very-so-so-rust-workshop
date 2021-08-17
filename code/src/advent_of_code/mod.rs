@@ -20,7 +20,7 @@
 ///
 /// Plus, lets add a bit more to this challenge, try to:
 ///
-/// 1. Define some output you expect from the function before you start your hacking, 
+/// 1. Define some output you expect from the function before you start your hacking,
 ///    modify the test case to match that output, it can be anything, few examples:
 ///    a) a string -> 'The numbers are 1721 and 299 and the product is 514579',
 ///    b) an array -> [1721, 299, 514579]

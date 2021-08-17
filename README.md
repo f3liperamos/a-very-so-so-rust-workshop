@@ -70,7 +70,7 @@ let my_tupple = (10, "string");
 println!("{}, {}", my_tupple.0, my_tupple.1);
 ```
 
-### Loops 
+### Loops
 while
 ```rust
 let mut i = 0;
