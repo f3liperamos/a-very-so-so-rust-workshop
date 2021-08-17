@@ -6,4 +6,4 @@ RUN ["bash", "-c", "cargo install cargo-watch"]
 FROM base AS dev
 WORKDIR /code
 COPY code .
-CMD ["cargo", "watch", "-x run"]
+CMD ["bash"]
