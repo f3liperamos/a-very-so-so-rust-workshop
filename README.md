@@ -1,35 +1,42 @@
-# Clone this repo
-> git clone https://github.com/f3liperamos/dotfiles.git
+# [Clone this repo](#clone)
+> git clone https://github.com/f3liperamos/a-very-so-so-rust-workshop.git
 
-# Docker
+# [Use docker](#docker)
 > docker build -t sb-rust . && docker run -v $PWD/code:/code -it --rm sb-rust
 PS: `cargo run` command is painfully slow when running docker with volumes on MacOS, it's taking > 20 seconds to build.
 
-# Install Rust locally
+# [OR Install Rust locally](#install-glorious-rust)
 > curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 [Recommended] install cargo-watch so you don't have to execute `cargo run` after every file change
 > cargo install cargo-watch
 
-# Let's code
-Rust has a steep learning curve and it takes time to get used to the compiler screaming at you for every little mistake.
+# [Let's code](#lets-code)
+Rust has a steep learning curve, it takes time to get used to the compiler screaming at you for every little mistake.
+ Try to remember which methods would you use if you were programming in javascript [Rust docs](https://doc.rust-lang.org/std/index.html) is your best friend,
+ just type there "reduce", "map" or anything and find the correct struct you need. If you're looking for mapping array [array::map](https://doc.rust-lang.org/std/primitive.array.html#method.map)
+ might be the one you're looking for.
 
-There are a few dummy exercises dummy exercises that I definitely didn't steal from [Tour of Rust](https://tourofrust.com/) or [Rustlings](https://github.com/rust-lang/rustlings).
+I put there two exercises that I totally didn't steal from [CodeWars](https://www.codewars.com/?language=rust), and one puzzle from
+ the [Advent of Code 2020](https://adventofcode.com/2020). Let's see if we are able to solve at least one of them. All of them have an explanation on top of the exercise
 
-The ultimate goal is to solve the challenge from the [Advent of Code 2020 - day 1](https://adventofcode.com/2020/day/1). You can use your own input from Advent of Code or use the predefined one I left there.
+# [Learning material](#learning)
+- Rust official documentation - [https://doc.rust-lang.org/std/index.html](https://doc.rust-lang.org/std/index.html), leading the list with our beloved [RTFM approach](https://en.wikipedia.org/wiki/RTFM)
+- A Gentle Introduction To Rust - [https://stevedonovan.github.io/rust-gentle-intro/readme.html](https://stevedonovan.github.io/rust-gentle-intro/readme.html)
+- Tour of Rust - [https://tourofrust.com](https://tourofrust.com), It has a nicer pacing compared with the official book and gives you a sandbox
+- Rust official book - [https://doc.rust-lang.org/book/title-page.html](https://doc.rust-lang.org/book/title-page.html), great but MASSIVE (and that's the reason why I didn't put at the top of the list)
+- Rust Cheat sheet - [https://cheats.rs](https://cheats.rs/), what a WONDERFUL website
+- Rust cookbook - [https://rust-lang-nursery.github.io/rust-cookbook](https://rust-lang-nursery.github.io/rust-cookbook/), a collection of simple examples of common programming tasks
+- Rust by example - [https://doc.rust-lang.org/rust-by-example](https://doc.rust-lang.org/rust-by-example/), One of the official books
+- ctjhoa/rust-learning - [https://github.com/ctjhoa/rust-learning](https://github.com/ctjhoa/rust-learning), A bunch of links to blog posts, articles, videos, etc for learning Rust. Including the above
 
-All exercise will have a brief explanation above them
-....
-
-
-# Better "let's code" sources
+# [Some better "let's code" sources](#better-lets-code)
 - https://github.com/rust-lang/rustlings
-- https://tourofrust.com/
 - https://rust-unofficial.github.io/too-many-lists/
 - https://www.codewars.com/?language=rust
 
-
-# EXTRA: More of basic syntax (really basic)
+# [EXTRA: More of basic syntax (really basic)](#really-basic-syntax)
+I REALLY recommended you to use any of the sources I put in [Learning Material](#learning) or the official source/book instead. As a quick-check source, it may work
 
 ### "console.log"
 ```rust
